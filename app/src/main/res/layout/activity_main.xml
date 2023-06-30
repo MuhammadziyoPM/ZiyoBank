@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_height="wrap_content">
+
+         <com.google.android.material.appbar.AppBarLayout
+             android:layout_width="match_parent"
+             android:background="@drawable/corner"
+             android:layout_height="wrap_content">
+             <androidx.appcompat.widget.Toolbar
+                 android:elevation="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:paddingStart="30dp"
+                         android:orientation="horizontal"
+                         android:layout_marginBottom="25dp"
+                         android:gravity="center_vertical">
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/baseline_account_balance_24"
+                             />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="ZIYOBANK"
+                             android:textSize="40dp"
+                             android:textColor="@color/white"
+                             android:textStyle="bold"
+                             android:layout_marginStart="20dp"
+                             />
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="40dp"
+                             android:layout_marginStart="20dp"
+                             android:src="@drawable/message"
+                             />
+
+
+                     </LinearLayout>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="10dp"
+                         android:text="Umumiy balans"
+                         android:textSize="20dp"
+                         android:textStyle="bold"
+                         android:textColor="@color/white"
+                         />
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="15dp"
+                         android:orientation="horizontal">
+
+                     </LinearLayout>
+                 </LinearLayout>
+
+
+
+
+             </androidx.appcompat.widget.Toolbar>
+
+         </com.google.android.material.appbar.AppBarLayout>
+
+     </LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/homeViewPage_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="56dp" />
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation_id"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                app:elevation="10dp"
+                app:itemIconSize="24dp"
+                app:itemIconTint="#0f90f6"
+                app:itemTextColor="#0f90f6"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu"
+                android:layout_marginTop="448dp"
+                />
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
